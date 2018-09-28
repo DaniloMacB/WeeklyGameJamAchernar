@@ -285,6 +285,7 @@ MonoBehaviour:
   controller: {fileID: 544348224}
   runSpeed: 40
   dashSpeed: 200
+  direcaoAtual: 0
 --- !u!58 &544348226
 CircleCollider2D:
   m_ObjectHideFlags: 0

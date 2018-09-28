@@ -19,6 +19,8 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	private bool doubleJumping = false;
+
 	[Header("Events")]
 	[Space]
 
@@ -54,6 +56,7 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				doubleJumping = false;
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -76,7 +79,7 @@ public class CharacterController2D : MonoBehaviour
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
-
+			
 			// If crouching
 			if (crouch)
 			{
@@ -124,11 +127,13 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump)
-		{
+		if (m_Grounded && jump) {
 			// Add a vertical force to the player.
 			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+		} else if (!m_Grounded && jump && !doubleJumping) {
+			doubleJumping = true;
+			print ("double jumpou");
 		}
 	}
 
