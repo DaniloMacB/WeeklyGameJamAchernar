@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour {
@@ -10,6 +8,8 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public float jumpForce;
 
+	private float movX;
+
 	// Use this for initialization
 	void Awake () 
 	{
@@ -18,13 +18,16 @@ public class PlayerController : MonoBehaviour {
 
 
 	void Update(){
-		float MovX = Input.GetAxisRaw ("Horizontal");
-		rgbd.velocity = new Vector2(MovX * speed, rgbd.velocity.y);
+		movX = Input.GetAxisRaw ("Horizontal");
 
 		if (Input.GetButtonDown ("Jump")) {
 			rgbd.velocity = Vector2.zero;
 			rgbd.AddForce (new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 		}
+	}
+		
+	void FixedUpdate(){
+		rgbd.velocity = new Vector2(movX * speed, rgbd.velocity.y);
 	}
 
 }
