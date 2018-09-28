@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+
+
 	public CharacterController2D controller;
 	private Rigidbody2D rgbd;
 
