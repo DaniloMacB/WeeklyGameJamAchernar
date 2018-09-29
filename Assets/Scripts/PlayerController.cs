@@ -25,6 +25,13 @@ public class PlayerController : MonoBehaviour {
 		direcaoAtual = dir.right;
 		rgbd = GetComponent<Rigidbody2D> ();
 	}
+	
+	
+	private Animator animator;
+	
+	void Start () {
+		animator = GetComponent<Animator>();
+	}
 
 	void Update(){
 
@@ -36,6 +43,8 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		horizontalMove = Input.GetAxisRaw ("Horizontal") * runSpeed;
+		
+		animator.SetFloat("walk", (Input.GetAxisRaw ("Horizontal")));
 
 		if (Input.GetButtonDown ("Jump")) {
 			jump = true;
@@ -61,5 +70,4 @@ public class PlayerController : MonoBehaviour {
 		jump = false;
 
 	}
-
 }
