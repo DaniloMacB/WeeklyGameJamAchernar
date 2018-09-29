@@ -12,9 +12,9 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
 
-	const float k_GroundedRadius = .01f; // Radius of the overlap circle to determine if grounded
+	const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
 	public bool m_Grounded;            // Whether or not the player is grounded.
-	const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
+	const float k_CeilingRadius = .02f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
@@ -23,14 +23,6 @@ public class CharacterController2D : MonoBehaviour
 
 
 	float checkRadius = 0.00001f;
-	public bool naParedeLeft = false;
-	public bool naParedeRight = false;
-	public LayerMask oQueEParede;
-	public Transform WjCheckLeft;
-	public Transform WjCheckRight;
-
-	public PhysicsMaterial2D normal;
-	public PhysicsMaterial2D wj;
 
 
 	[Header("Events")]
@@ -57,9 +49,6 @@ public class CharacterController2D : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		naParedeRight = Physics2D.OverlapCircle (WjCheckRight.position, checkRadius, oQueEParede);
-		naParedeLeft = Physics2D.OverlapCircle (WjCheckLeft.position, checkRadius, oQueEParede);
-
 
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
@@ -144,52 +133,16 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && !naParedeRight) {
+		if (m_Grounded && jump) {
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
-		} else if (!m_Grounded && jump && !doubleJumping && !naParedeRight) {
+		} else if (!m_Grounded && jump && !doubleJumping) {
 			doubleJumping = true;
 			m_Rigidbody2D.velocity = Vector2.zero;
 			m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
 		}
-
-		if (!naParedeRight) {
-			GetComponent<BoxCollider2D> ().sharedMaterial = normal;
-		}
-
-		if (naParedeRight) {
-			if (!m_Grounded) {
-				GetComponent<BoxCollider2D> ().sharedMaterial = wj;
-				if (jump) {
-					m_Rigidbody2D.velocity = Vector2.zero;
-					m_Rigidbody2D.AddForce (new Vector2 (-700f, 700f));
-
-				}
-			} else {
-				GetComponent<BoxCollider2D> ().sharedMaterial = normal;
-			}
-
-
-		}
-
-		//if (!m_Grounded && naParedeRight) {
-		//	m_Rigidbody2D.gravityScale = 1;
-		//}
-		//if (m_Grounded && naParedeRight) {
-		//	m_Rigidbody2D.gravityScale = 3;
-		//}
-		//
-		//if (!m_Grounded && naParedeRight && jump) {
-		//	print ("WJ START");
-		//	m_Rigidbody2D.AddForce (new Vector2 (m_JumpForce, m_JumpForce));
-		//}
-		//if (m_Grounded && naParedeRight && jump) {
-		//	print ("n começa");
-		//}
-		//if (!naParedeRight) {
-		//	m_Rigidbody2D.gravityScale = 3;
-		//}
+			
 
 	}
 
