@@ -23,6 +23,6 @@ MonoBehaviour:
   fireRate: 0.05
   reloadTime: 1
   playerObj: {fileID: 0}
-  bulletPrefab: {fileID: 1942884810642812, guid: 044c6b993f8a7c0478d6810a34216cf4,
+  bulletPrefab: {fileID: 1638274579354296, guid: 044c6b993f8a7c0478d6810a34216cf4,
     type: 2}
   speedBullet: 5000

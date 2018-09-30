@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour {
 	public float runSpeed;															// var velocidade de andar
 	public float dashSpeed;															// var velocidade do dash
 
+	bool canMove = true;
+
 	public enum dir { left, right };												// enum de direcao
 	public dir direcaoAtual;														// direcao atual
 
@@ -87,6 +89,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Update(){
 
+		animator.SetBool ("OnFloor", controller.m_Grounded);
+
 		#region apenas teste da função de pegar armas novas
 		if (Input.GetKeyDown (KeyCode.C)) {
 			UpdateWeapon ();
@@ -113,10 +117,12 @@ public class PlayerController : MonoBehaviour {
 
 		if (shootInput)																// se apertar pra atirar
 		{
-			if (currentBullets > 0)													// se tiver mais balas q 0
-				Fire();																// senao atira
-			else if (bulletsLeft > 0)												// se tiver mais municao q 0
+			if (currentBullets > 0){												// se tiver mais balas q 0
+				Fire();																// atira
+			}
+			else if (bulletsLeft > 0){												// seano se tiver menos municao q 0
 				DoReload();															// recarrega
+			}
 		}
 
 		if (Input.GetKeyDown(KeyCode.R))											// se apertar R
@@ -142,15 +148,6 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButtonDown ("Jump")) {											// se pular
 			jump = true;															// pulo = true
 		}																			// ...............
-
-		if (rgbd.velocity.y != 0)													// pra animacao de pulo
-        {
-			animator.SetBool("OnFloor", false);
-        }
-        else
-        {
-            animator.SetBool("OnFloor", true);
-        }
 		
 		if (Input.GetButtonDown ("Crouch")) {										// se agachar
 			crouch = true;															// agachado = true
@@ -173,7 +170,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		controller.Move (horizontalMove * Time.fixedDeltaTime, crouch, jump);		// faz com que o charactercontroller2d mova o personagem
+		if(canMove)
+		controller.Move (horizontalMove * Time.fixedDeltaTime, false, jump);		// faz com que o charactercontroller2d mova o personagem
 		jump = false;																// o pulo se torna false
 
 	}
@@ -246,6 +244,9 @@ public class PlayerController : MonoBehaviour {
 	private void Fire()																							// void para atirar
 	{
 		if (fireTimer < fireRate || currentBullets <= 0 || isReloading) return;									// se não tiver municao ou nao tiver dado o tempo, para a funcao
+
+		animator.SetTrigger("Shoot");
+		StartCoroutine (canMove_CR (0.3f));
 		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
 
 		if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
@@ -265,5 +266,12 @@ public class PlayerController : MonoBehaviour {
 		isReloading = true;																	// ta carregando = true
 		yield return new WaitForSeconds(reloadTime);										// espera o tempo de reload
 		isReloading = false;																// ta carregando = falso
+	}
+
+	IEnumerator canMove_CR(float moveTime){
+		rgbd.velocity = Vector2.zero;
+		canMove = false;
+		yield return new WaitForSeconds (moveTime);
+		canMove = true;
 	}
 }
