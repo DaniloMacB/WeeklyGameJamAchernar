@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2dad8851683c86408de7b0679b5cc4f
+guid: 07110f644e4dba447a000a616d5315d3
 TextureImporter:
   fileIDToRecycleName:
     21300000: barra_de_ferramentas_0
@@ -11,6 +11,9 @@ TextureImporter:
     21300012: barra_de_ferramentas_6
     21300014: barra_de_ferramentas_7
     21300016: barra_de_ferramentas_8
+    21300018: barra_de_ferramentas_9
+    21300020: barra_de_ferramentas_10
+    21300022: barra_de_ferramentas_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -129,7 +132,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef5e4af3a06f7740b758280d5893f9d
+      spriteID: 3a10d383da72dc74797e73bc744178fb
       vertices: []
       indices: 
       edges: []
@@ -149,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4138a3d923bad6e42bc2925c2bbff474
+      spriteID: cf3b18dfec2a1374f89998e24685a1f7
       vertices: []
       indices: 
       edges: []
@@ -169,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f885cc7bcb8cc44c9f909f82f1abc9e
+      spriteID: 89dcb5f67ad29fb4f90b16819798901d
       vertices: []
       indices: 
       edges: []
@@ -189,7 +192,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be7265fb63b5ad94b912c056ea14d280
+      spriteID: f89fc888a0676764a9cc35f75ac32f6f
       vertices: []
       indices: 
       edges: []
@@ -209,7 +212,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9cf381a5242d449a5d760ad57fc2c7
+      spriteID: 9eb779b831dccce4490d739f465157f1
       vertices: []
       indices: 
       edges: []
@@ -229,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb8cd7f7a0f54049884123447257d5b
+      spriteID: 778224dcde78ff341ba63c3d80c8b4fa
       vertices: []
       indices: 
       edges: []
@@ -249,7 +252,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d06d1a367f379114182fd7d8ef1b0788
+      spriteID: 70951e0198d6c8e4b98a21e6ea0b830d
       vertices: []
       indices: 
       edges: []
@@ -269,7 +272,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f6b7995d79ef4a47b567783884632b2
+      spriteID: 847b1a8fc9606e84cb40c15d72a6825b
       vertices: []
       indices: 
       edges: []
@@ -289,7 +292,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480c45e0ef4604741836967b89434558
+      spriteID: d043e6ac1f8369f4f80b02f145e9005f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra_de_ferramentas_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb69f264d79e784db49f2ff3b6c402e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra_de_ferramentas_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daf8b7fbfa9c0543adbd5477497c399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra_de_ferramentas_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0fbc55c4fd4c4c81529a893658e50
       vertices: []
       indices: 
       edges: []
@@ -297,7 +360,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 880ce1f3a89f49a4788fe898ab41e950
+    spriteID: 84f57fe3d71abfd4394e7420ea3e14f3
     vertices: []
     indices: 
     edges: []

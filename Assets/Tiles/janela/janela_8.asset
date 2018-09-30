@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: janela_8
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300016, guid: 45b381e38b08b0f4db4420ede3b11bad, type: 3}
+  m_Sprite: {fileID: 21300016, guid: db14fb516d3f64545bf90ba7e99a9ed8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
