@@ -143,6 +143,15 @@ public class PlayerController : MonoBehaviour {
 			jump = true;															// pulo = true
 		}																			// ...............
 
+		if (rgbd.velocity.y != 0)													// pra animacao de pulo
+        {
+			animator.SetBool("OnFloor", false);
+        }
+        else
+        {
+            animator.SetBool("OnFloor", true);
+        }
+		
 		if (Input.GetButtonDown ("Crouch")) {										// se agachar
 			crouch = true;															// agachado = true
 		} else if (Input.GetButtonUp ("Crouch")) {									// senao
