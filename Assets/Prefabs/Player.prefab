@@ -223,6 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64dcd9cedbf2c34db6aab1e540fbe9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLife: 100
+  curLife: 0
+  lifeText: {fileID: 0}
   ammoText: {fileID: 0}
   weaponText: {fileID: 0}
   armaAtual: {fileID: 11400000, guid: b1c8e003a8cf81b41a4471d6b884bb37, type: 2}

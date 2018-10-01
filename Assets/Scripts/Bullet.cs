@@ -9,4 +9,10 @@ public class Bullet : MonoBehaviour {
 	void Start(){
 		Destroy (gameObject, 4f);
 	}
+
+	void OnTriggerEnter2D(Collider2D col){
+		if(col.tag == "Player"){
+			col.GetComponent<PlayerController> ().TakeDamage(bulletDamage);
+		}
+	}
 }
