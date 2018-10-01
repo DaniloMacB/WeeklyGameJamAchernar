@@ -124,7 +124,7 @@ MonoBehaviour:
   startDir: 1
   curState: 0
   distanceFromPlayer: 0
-  distanceToAttack: 3
+  distanceToAttack: 1.2
   speed: 4
   waypointRight: {fileID: 0}
   waypointLeft: {fileID: 0}

@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	bool invulnerable = false;														// var invulneravel
-	public float invulnerableTime;													// var tempo invulneravel
+	public float hitInvulnerableTime;													// var tempo invulneravel
 
 	public CharacterController2D controller;										// var character controller 2d
 	private Rigidbody2D rgbd;														// var rigidbody
@@ -62,8 +62,8 @@ public class PlayerController : MonoBehaviour {
 	public dir direcaoAtual;														// direcao atual
 
 	bool jump = false;																// var jump
-	bool crouch = false;															// var crouch
-	bool dash = false;																// var dash
+	//bool crouch = false;															// var crouch
+	//bool dash = false;																// var dash
 
 	float horizontalMove = 0f;														// movimento horizontal (nao mexer)
 
@@ -150,9 +150,9 @@ public class PlayerController : MonoBehaviour {
 		}																			// ...............
 		
 		if (Input.GetButtonDown ("Crouch")) {										// se agachar
-			crouch = true;															// agachado = true
+			//crouch = true;															// agachado = true
 		} else if (Input.GetButtonUp ("Crouch")) {									// senao
-			crouch = false;															// agachado = false
+			//crouch = false;															// agachado = false
 		}																			// ................
 
 		if (Input.GetButtonDown ("Dash")) {											// se apertar o dash
@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour {
 				rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
 				rgbd.AddForce (-Vector2.left * dashSpeed * 10f);					// adiciona força pra direita multiplicado por dashspeed * 10
 			}																		//
-			StartCoroutine (invulnerable_CR());										// inicia a coroutine para ficar invulneravel uns segundos
+			StartCoroutine (invulnerable_CR(hitInvulnerableTime));										// inicia a coroutine para ficar invulneravel uns segundos
 			animator.SetTrigger("Dash");
 		}
 
@@ -176,11 +176,14 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	IEnumerator invulnerable_CR(){													// coroutine de invulnerabilidade
-		invulnerable = true;														// invulneravel = true
-		yield return new WaitForSeconds (invulnerableTime);							// espera o tempo do invulnerabletime
-		invulnerable = false;														// invulnerable = false
-		
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.tag == "Damage") {
+			if (!invulnerable) {
+				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
+			} else {
+				print ("Invulnerable, not hitting");
+			}
+		}
 	}
 
 	void UpdateWeapon(){
@@ -274,4 +277,12 @@ public class PlayerController : MonoBehaviour {
 		yield return new WaitForSeconds (moveTime);
 		canMove = true;
 	}
+
+	IEnumerator invulnerable_CR(float howMuch){													// coroutine de invulnerabilidade
+		invulnerable = true;														// invulneravel = true
+		animator.SetTrigger ("Hurt");
+		yield return new WaitForSeconds (howMuch);							// espera o tempo do invulnerabletime
+		invulnerable = false;														// invulnerable = false
+	}
+
 }

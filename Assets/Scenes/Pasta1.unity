@@ -2388,10 +2388,6 @@ Prefab:
       propertyPath: waypointLeft
       value: 
       objectReference: {fileID: 774606074}
-    - target: {fileID: 1464965754448320, guid: 090f434248926094296eda4aae3c538f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 090f434248926094296eda4aae3c538f, type: 2}
   m_IsPrefabAsset: 0
@@ -5259,11 +5255,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224388747575404756, guid: 289544445752e85408a0bb6c1b9ba997,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 224388747575404756, guid: 289544445752e85408a0bb6c1b9ba997,
         type: 2}
       propertyPath: m_LocalPosition.x

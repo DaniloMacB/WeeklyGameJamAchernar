@@ -6,7 +6,7 @@ using UnityEngine;
 public class Arma : ScriptableObject {
 
 
-	public new string nome;
+	public string nome;
 	public string descricao;
 
 	public Sprite spriteArma;

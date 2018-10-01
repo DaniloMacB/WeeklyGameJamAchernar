@@ -22,7 +22,7 @@ public class CharacterController2D : MonoBehaviour
 	private bool doubleJumping = false;
 
 
-	float checkRadius = 0.00001f;
+	//float checkRadius = 0.00001f;
 
 
 	[Header("Events")]

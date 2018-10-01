@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour {
 
 	Transform player;
 
+	float playerPosX;
+
 	void Awake () {
 		anim = GetComponent<Animator> ();
 		rgbd = GetComponent<Rigidbody2D> ();
@@ -48,6 +50,22 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		distanceFromPlayer = Vector2.Distance (transform.position, player.position);
+		playerPosX = player.position.x - transform.position.x;
+
+		if (distanceFromPlayer <= distanceToAttack) {
+			curState = state.Attacking;
+			print ("Attacking");
+			if (playerPosX <= -0.001f) {
+				GetComponent<SpriteRenderer> ().flipX = false;
+			} else {
+				GetComponent<SpriteRenderer> ().flipX = true;
+			}
+		} else {
+			curState = state.Walk;
+		}
+
 		if (canMove && curState == state.Walk) {
 			if (curDir == dir.Right) {
 				transform.Translate (Vector2.right * speed * Time.deltaTime);
