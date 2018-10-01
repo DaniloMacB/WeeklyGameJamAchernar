@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 
 
 
-	bool invulnerable = false;														// var invulneravel
+	public bool invulnerable = false;														// var invulneravel
 	public float hitInvulnerableTime;													// var tempo invulneravel
 
 	public CharacterController2D controller;										// var character controller 2d
@@ -178,11 +178,13 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "Damage") {
-			if (!invulnerable) {
-				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
-			} else {
+			if (invulnerable) {
 				print ("Invulnerable, not hitting");
+			} else {
+				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
 			}
+
+			Destroy (col.gameObject);
 		}
 	}
 

@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 58964101780442482}
   - component: {fileID: 50435121500446410}
   - component: {fileID: 114052815625514678}
-  m_Layer: 10
-  m_Name: Bullet
-  m_TagString: Bullet
+  m_Layer: 0
+  m_Name: Teia
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

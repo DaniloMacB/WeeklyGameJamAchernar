@@ -153,7 +153,7 @@ MonoBehaviour:
   startDir: 1
   curState: 0
   attackMethod: 1
-  bulletPrefab: {fileID: 1638274579354296, guid: 044c6b993f8a7c0478d6810a34216cf4,
+  bulletPrefab: {fileID: 1638274579354296, guid: 1c6b1dcfe401fd9459516a0212bfc903,
     type: 2}
   bulletPos: {fileID: 4002779967952420}
   bulletSpeed: 2000

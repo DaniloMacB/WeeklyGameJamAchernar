@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367807201423940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.13, z: 0}
+  m_LocalPosition: {x: -8.45, y: -7.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4330496652322286}
@@ -241,7 +241,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   muzzleFlash: {fileID: 4542931624490790}
   speedBullet: 0
-  invulnerableTime: 0
+  invulnerable: 0
+  hitInvulnerableTime: 0.375
   controller: {fileID: 114383824347766986}
   runSpeed: 40
   dashSpeed: 200
