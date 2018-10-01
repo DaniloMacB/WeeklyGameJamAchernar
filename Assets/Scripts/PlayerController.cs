@@ -157,6 +157,8 @@ public class PlayerController : MonoBehaviour {
 			jump = true;															// pulo = true
 		}																			// ...............
 		
+		animator.SetFloat("JumpSpeed", rgbd.velocity.y);							// seta a variavel da vel do pulo pra animacao
+		
 		if (Input.GetButtonDown ("Crouch")) {										// se agachar
 			//crouch = true;															// agachado = true
 		} else if (Input.GetButtonUp ("Crouch")) {									// senao
