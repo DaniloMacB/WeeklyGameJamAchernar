@@ -159,12 +159,12 @@ public class PlayerController : MonoBehaviour {
 			if (direcaoAtual == dir.left) {											// se tiver olhando pra esquerda
 				rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
 				rgbd.AddForce (Vector2.left * dashSpeed * 10f);						// adiciona força pra esquerda multiplicado por dashspeed * 10
-
 			} else {																// senao se tiver olhandopra direita
 				rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
 				rgbd.AddForce (-Vector2.left * dashSpeed * 10f);					// adiciona força pra direita multiplicado por dashspeed * 10
 			}																		//
 			StartCoroutine (invulnerable_CR());										// inicia a coroutine para ficar invulneravel uns segundos
+			animator.SetTrigger("Dash");
 		}
 
 	}
