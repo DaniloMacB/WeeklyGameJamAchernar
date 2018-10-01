@@ -18,6 +18,14 @@ public class Enemy : MonoBehaviour {
 	public enum state { Idle, Walk, Attacking }
 	public state curState;
 
+	public enum attackStyle { Physical, Distance }
+	public attackStyle attackMethod;
+	public GameObject bulletPrefab;
+	public Transform bulletPos;
+	public float bulletSpeed;
+	public float bulletShootTime;
+	public bool shooting = false;
+
 	public float distanceFromPlayer;
 	public float distanceToAttack;
 	public float speed;
@@ -28,6 +36,7 @@ public class Enemy : MonoBehaviour {
 	public Transform waypointLeft;
 
 	public Transform waypointToFollow;
+
 
 	Transform player;
 
@@ -56,12 +65,22 @@ public class Enemy : MonoBehaviour {
 
 		if (distanceFromPlayer <= distanceToAttack) {
 			curState = state.Attacking;
-			print ("Attacking");
+
+
 			if (playerPosX <= -0.001f) {
-				GetComponent<SpriteRenderer> ().flipX = false;
+				//GetComponent<SpriteRenderer> ().flipX = false;
+				transform.localScale = new Vector3(1f, 1f, 1f);
 			} else {
-				GetComponent<SpriteRenderer> ().flipX = true;
+				//GetComponent<SpriteRenderer> ().flipX = true;
+				transform.localScale = new Vector3(-1f, 1f, 1f);
 			}
+
+			if (attackMethod == attackStyle.Physical) {
+				print ("Attacking");
+			} else if (attackMethod == attackStyle.Distance && !shooting) {
+				StartCoroutine (Shoot_CR ());
+			}
+
 		} else {
 			curState = state.Walk;
 		}
@@ -69,10 +88,12 @@ public class Enemy : MonoBehaviour {
 		if (canMove && curState == state.Walk) {
 			if (curDir == dir.Right) {
 				transform.Translate (Vector2.right * speed * Time.deltaTime);
-				GetComponent<SpriteRenderer> ().flipX = true;
+				//GetComponent<SpriteRenderer> ().flipX = true;
+				transform.localScale = new Vector3(-1f, 1f, 1f);
 			} else {
 				transform.Translate (Vector2.left * speed * Time.deltaTime);
-				GetComponent<SpriteRenderer> ().flipX = false;
+				transform.localScale = new Vector3(1f, 1f, 1f);
+				//GetComponent<SpriteRenderer> ().flipX = false;
 			}
 			anim.SetBool ("Walk", true);
 			anim.SetBool ("Attacking", false);
@@ -125,6 +146,20 @@ public class Enemy : MonoBehaviour {
 	public void Death(){
 		rgbd.simulated = false;
 		GetComponent<Collider2D> ().enabled = false;
+	}
+
+	IEnumerator Shoot_CR(){
+
+		shooting = true;
+		GameObject bulletShoot = Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
+		if(transform.localScale.x == -1f)
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
+		else
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
+		
+		yield return new WaitForSeconds (bulletShootTime);
+		shooting = false;
+
 	}
 
 
