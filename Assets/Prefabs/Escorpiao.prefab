@@ -123,8 +123,14 @@ MonoBehaviour:
   curDir: 1
   startDir: 1
   curState: 0
+  attackMethod: 0
+  bulletPrefab: {fileID: 0}
+  bulletPos: {fileID: 0}
+  bulletSpeed: 0
+  bulletShootTime: 0
+  shooting: 0
   distanceFromPlayer: 0
-  distanceToAttack: 1.2
+  distanceToAttack: 2
   speed: 4
   waypointRight: {fileID: 0}
   waypointLeft: {fileID: 0}
