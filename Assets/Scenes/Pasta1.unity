@@ -2339,6 +2339,62 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &225507191
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754255188981856, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078059309317170, guid: 090f434248926094296eda4aae3c538f,
+        type: 2}
+      propertyPath: waypointRight
+      value: 
+      objectReference: {fileID: 1308303913}
+    - target: {fileID: 114078059309317170, guid: 090f434248926094296eda4aae3c538f,
+        type: 2}
+      propertyPath: waypointLeft
+      value: 
+      objectReference: {fileID: 774606074}
+    - target: {fileID: 1464965754448320, guid: 090f434248926094296eda4aae3c538f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 090f434248926094296eda4aae3c538f, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &232977896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,10 +2506,9 @@ Prefab:
       propertyPath: waypointLeft
       value: 
       objectReference: {fileID: 774606074}
-    - target: {fileID: 50683773497584960, guid: cceb964d597160341b819bea77f80c32,
-        type: 2}
-      propertyPath: m_Mass
-      value: 999
+    - target: {fileID: 1909357957422964, guid: cceb964d597160341b819bea77f80c32, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cceb964d597160341b819bea77f80c32, type: 2}
