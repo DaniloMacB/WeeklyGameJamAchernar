@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pause : MonoBehaviour {
-
-	[SerializeField]
+	
 	bool isPaused = false;
 	
 	void Awake(){
