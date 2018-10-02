@@ -61,7 +61,16 @@ public class Enemy : MonoBehaviour {
             curDir = dir.Left;
         }
 
-		curState = state.Walk;
+        if (mobMode == mode.Walker)
+        {
+		    curState = state.Walk;
+            anim.SetBool("Walk", true);
+        }
+        else if (mobMode == mode.Stopped)
+        {
+            curState = state.Idle;
+            anim.SetBool("Idle", true);
+        }
 
 		curLife = maxLife;
 
@@ -87,7 +96,10 @@ public class Enemy : MonoBehaviour {
 
 			if (attackMethod == attackStyle.Physical) {
 				print ("Attacking");
-			} else if (attackMethod == attackStyle.Distance && !shooting) {
+                anim.SetBool("Attacking", true);
+                anim.SetBool("Walk", false);
+                anim.SetBool("Idle", false);
+            } else if (attackMethod == attackStyle.Distance && !shooting) {
 				StartCoroutine (Shoot_CR ());
 			}
 
@@ -171,8 +183,11 @@ public class Enemy : MonoBehaviour {
 			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
 		else
 			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
-		
-		yield return new WaitForSeconds (bulletShootTime);
+
+        anim.SetBool("Attacking", true);
+        anim.SetBool("Walk", false);
+        anim.SetBool("Idle", false);
+        yield return new WaitForSeconds (bulletShootTime);
 		shooting = false;
 
 	}
