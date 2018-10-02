@@ -163,19 +163,19 @@ public class PlayerController : MonoBehaviour {
 			//crouch = true;															// agachado = true
 		} else if (Input.GetButtonUp ("Crouch")) {									// senao
 			//crouch = false;															// agachado = false
-		}																			// ................
+		}                                                                           // ................
 
-		if (Input.GetButtonDown ("Dash")) {											// se apertar o dash
-			if (direcaoAtual == dir.left) {											// se tiver olhando pra esquerda
-				rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
-				rgbd.AddForce (Vector2.left * dashSpeed * 10f);						// adiciona força pra esquerda multiplicado por dashspeed * 10
-			} else {																// senao se tiver olhandopra direita
-				rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
-				rgbd.AddForce (-Vector2.left * dashSpeed * 10f);					// adiciona força pra direita multiplicado por dashspeed * 10
-			}																		//
-			StartCoroutine (invulnerable_CR(hitInvulnerableTime));										// inicia a coroutine para ficar invulneravel uns segundos
-			animator.SetTrigger("Dash");
-		}
+        if (Input.GetButtonDown ("Dash")) {											// se apertar o dash
+        	if (direcaoAtual == dir.left) {											// se tiver olhando pra esquerda
+        		rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
+        		rgbd.AddForce (Vector2.left * dashSpeed * 10f);						// adiciona força pra esquerda multiplicado por dashspeed * 10
+        	} else {																// senao se tiver olhandopra direita
+        		rgbd.velocity = Vector2.zero;										// zera a velocidade do rigidbody
+        		rgbd.AddForce (-Vector2.left * dashSpeed * 10f);					// adiciona força pra direita multiplicado por dashspeed * 10
+        	}																		//
+        	StartCoroutine (invulnerable_CR(hitInvulnerableTime));										// inicia a coroutine para ficar invulneravel uns segundos
+        	animator.SetTrigger("Dash");
+        }
 
 	}
 
@@ -192,7 +192,8 @@ public class PlayerController : MonoBehaviour {
 				print ("Invulnerable, not hitting");
 			} else {
 				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
-			}
+                animator.SetTrigger("Hurt");
+            }
 
 			Destroy (col.gameObject);
 		}
@@ -277,7 +278,7 @@ public class PlayerController : MonoBehaviour {
 		if (fireTimer < fireRate || currentBullets <= 0 || isReloading) return;									// se não tiver municao ou nao tiver dado o tempo, para a funcao
 
 		animator.SetTrigger("Shoot");
-		StartCoroutine (canMove_CR (0.3f));
+		StartCoroutine (canMove_CR (0.375f));
 		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
 
 		if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
@@ -308,7 +309,6 @@ public class PlayerController : MonoBehaviour {
 
 	IEnumerator invulnerable_CR(float howMuch){													// coroutine de invulnerabilidade
 		invulnerable = true;														// invulneravel = true
-		animator.SetTrigger ("Hurt");
 		yield return new WaitForSeconds (howMuch);							// espera o tempo do invulnerabletime
 		invulnerable = false;														// invulnerable = false
 	}

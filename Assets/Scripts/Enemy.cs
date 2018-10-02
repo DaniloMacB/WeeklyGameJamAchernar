@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour {
 	public enum state { Idle, Walk, Attacking }
 	public state curState;
 
+    public enum mode { Stopped, Walker, Flying }
+    public mode mobMode;
+
 	public enum attackStyle { Physical, Distance }
 	public attackStyle attackMethod;
 	public GameObject bulletPrefab;
@@ -48,13 +51,20 @@ public class Enemy : MonoBehaviour {
 		player = FindObjectOfType<PlayerController> ().transform;
 
 		if (startDir == dir.Right)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
 			curDir = dir.Right;
-		else
-			curDir = dir.Left;
+        }
+        else
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+            curDir = dir.Left;
+        }
 
 		curState = state.Walk;
 
 		curLife = maxLife;
+
 	}
 	
 	// Update is called once per frame
@@ -84,6 +94,11 @@ public class Enemy : MonoBehaviour {
 		} else {
 			curState = state.Walk;
 		}
+
+        if (mobMode == mode.Stopped)
+        {
+            return;
+        }
 
 		if (canMove && curState == state.Walk) {
 			if (curDir == dir.Right) {
