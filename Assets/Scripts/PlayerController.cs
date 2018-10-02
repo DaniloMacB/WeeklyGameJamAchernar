@@ -9,11 +9,11 @@ public class PlayerController : MonoBehaviour {
 	#region vida do personagem
 	public int maxLife;
 	public int curLife;
-	public Text lifeText;
-	#endregion
+    public Image lifeImage;
+    #endregion
 
 
-	AudioSource _audioSource;														// audiosource
+    AudioSource _audioSource;														// audiosource
 
 
 	#region arma
@@ -84,13 +84,15 @@ public class PlayerController : MonoBehaviour {
 		animator = GetComponent<Animator>();										// define o animator
 		_audioSource = GetComponent<AudioSource> ();								// define o audiosource
 
+        
+
 		currentBullets = bulletsPerMag;												// balas atuais = balas por municao
 		curLife = maxLife;
 		UpdateWeapon ();															// atualiza a arma
 		UpdateAmmoText();															// atualiza texto de  municao
 		UpdateWeaponText ();														// atualiza texto da arma (nome)
-
-	}
+        UpdateLifeImage();
+    }
 	
 	
 
@@ -231,20 +233,27 @@ public class PlayerController : MonoBehaviour {
 
 	public void TakeDamage(int damageToTake){
 		curLife -= damageToTake;
-		if (curLife <= 0) {
+        
+        if (curLife <= 0) {
 			print ("Game Over");
 		}
-		if (curLife < 0) {
-			curLife = 0;
-		}
-		UpdateLifeText ();
-	}
+        if (curLife < 0)
+        {
+            curLife = 0;
+        }
 
-	private void UpdateLifeText(){
-		lifeText.text = curLife.ToString();
-	}
+        UpdateLifeImage();
 
-	private void DoReload()																	// funcao para forçar o reload
+    }
+
+    private void UpdateLifeImage()
+    {
+        float lifeUpdated = (curLife / 100f);
+        lifeImage.fillAmount = lifeUpdated;
+    }
+
+
+    private void DoReload()																	// funcao para forçar o reload
 	{
 		//AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
 

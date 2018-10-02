@@ -167,6 +167,11 @@ Prefab:
       propertyPath: weaponText
       value: 
       objectReference: {fileID: 1933138204}
+    - target: {fileID: 114062492127721618, guid: a0effedfd46068d4ab34b9bb639a5e43,
+        type: 2}
+      propertyPath: lifeImage
+      value: 
+      objectReference: {fileID: 693562971}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0effedfd46068d4ab34b9bb639a5e43, type: 2}
   m_IsPrefabAsset: 0
@@ -1095,6 +1100,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 090f434248926094296eda4aae3c538f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &693562971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114158299891814524, guid: 289544445752e85408a0bb6c1b9ba997,
+    type: 2}
+  m_PrefabInternal: {fileID: 1300716457}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &707711170
 GameObject:
   m_ObjectHideFlags: 0

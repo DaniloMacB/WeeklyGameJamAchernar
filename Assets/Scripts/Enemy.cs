@@ -94,11 +94,8 @@ public class Enemy : MonoBehaviour {
 				transform.localScale = new Vector3(-1f, 1f, 1f);
 			}
 
-			if (attackMethod == attackStyle.Physical) {
-				print ("Attacking");
-                anim.SetBool("Attacking", true);
-                anim.SetBool("Walk", false);
-                anim.SetBool("Idle", false);
+			if (attackMethod == attackStyle.Physical && !shooting) {
+                StartCoroutine(Attack_CR());
             } else if (attackMethod == attackStyle.Distance && !shooting) {
 				StartCoroutine (Shoot_CR ());
 			}
@@ -191,6 +188,25 @@ public class Enemy : MonoBehaviour {
 		shooting = false;
 
 	}
+
+    IEnumerator Attack_CR()
+    {
+        shooting = true;
+        anim.SetBool("Attacking", true);
+        anim.SetBool("Walk", false);
+        anim.SetBool("Idle", false);
+
+        if(distanceFromPlayer <= distanceToAttack)
+        {
+            float distanceY = transform.position.y - player.position.y;
+            print(distanceY);
+            if(distanceY <= 1f)
+            player.GetComponent<PlayerController>().TakeDamage(10);
+        }
+
+        yield return new WaitForSeconds(bulletShootTime);
+        shooting = false;
+    }
 
 
 

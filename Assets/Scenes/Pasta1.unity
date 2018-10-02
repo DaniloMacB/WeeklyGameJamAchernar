@@ -193,9 +193,20 @@ Prefab:
       propertyPath: lifeText
       value: 
       objectReference: {fileID: 1933138204}
+    - target: {fileID: 114062492127721618, guid: a0effedfd46068d4ab34b9bb639a5e43,
+        type: 2}
+      propertyPath: lifeImage
+      value: 
+      objectReference: {fileID: 144517176}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0effedfd46068d4ab34b9bb639a5e43, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &144517176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114158299891814524, guid: 289544445752e85408a0bb6c1b9ba997,
+    type: 2}
+  m_PrefabInternal: {fileID: 1300716457}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &220209809
 Prefab:
   m_ObjectHideFlags: 0
@@ -1404,6 +1415,11 @@ Prefab:
         type: 2}
       propertyPath: startDir
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614012980528316, guid: cceb964d597160341b819bea77f80c32,
+        type: 2}
+      propertyPath: bulletShootTime
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cceb964d597160341b819bea77f80c32, type: 2}
