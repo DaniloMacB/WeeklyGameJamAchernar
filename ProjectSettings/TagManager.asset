@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Bullet
   - Damage
+  - Commands
   layers:
   - Default
   - TransparentFX
