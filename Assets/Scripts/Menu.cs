@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 	
+	public GameObject commandsPanel;
+	
 	public void Play()
 	{
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene("Desktop");
 	}
 	
 	public void Quit()
@@ -22,5 +24,20 @@ public class Menu : MonoBehaviour {
 		#elif (UNITY_WEBGL)
 		Application.OpenURL("about:blank");
 		#endif
+	}
+	
+	public void MainMenu()
+	{
+		SceneManager.LoadScene("Menu");
+	}
+	
+	public void Commands()
+	{
+		commandsPanel.SetActive (true);
+	}
+	
+	public void BackCommands()
+	{
+		commandsPanel.SetActive (false);
 	}
 }

@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour {
 	
-	bool isPaused = false;
+	public bool isPaused = false;
 	
-	void Awake(){
-		
-	}
-	
-	void Start(){
-		
-	}
+	public GameObject pausePanel;
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.Escape)) {
@@ -24,10 +18,12 @@ public class Pause : MonoBehaviour {
 		isPaused = !isPaused;
 		if (isPaused) {
 			Time.timeScale = 0f;
+			pausePanel.SetActive (true);
 		} 
 		else 
 		{
 			Time.timeScale = 1f;
+			pausePanel.SetActive (false);
 		}
 	}
 }

@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c2a14e39392f55740a7add3dac0caa2a
@@ -16,5 +13,8 @@ EditorBuildSettings:
     guid: 6e4df0270ec33914c94fbc30f9fb79aa
   - enabled: 1
     path: Assets/Scenes/Pasta1.unity
-    guid: 4f2b08f61b9e02b4ea56f56253a07805
+    guid: 188fd9d745f9b724e8db08842016fd4d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
