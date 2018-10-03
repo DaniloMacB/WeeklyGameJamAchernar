@@ -290,6 +290,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114614012980528316, guid: cceb964d597160341b819bea77f80c32,
+        type: 2}
+      propertyPath: maxLife
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cceb964d597160341b819bea77f80c32, type: 2}
   m_IsPrefabAsset: 0
@@ -1084,8 +1089,8 @@ Tilemap:
       m_ColliderType: 2
   - first: {x: -2, y: 1, z: 0}
     second:
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 8
       m_ObjectToInstantiate: {fileID: 0}
@@ -1102,8 +1107,8 @@ Tilemap:
       m_ColliderType: 2
   - first: {x: 0, y: 1, z: 0}
     second:
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 8
       m_ObjectToInstantiate: {fileID: 0}
@@ -1111,8 +1116,8 @@ Tilemap:
       m_ColliderType: 2
   - first: {x: 1, y: 1, z: 0}
     second:
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 8
       m_ObjectToInstantiate: {fileID: 0}
@@ -1132,13 +1137,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 4
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: a7b220f4af795d2459301adb7462d998, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 46ac5d84437c623418eb0d4332e662b2, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 3981aa77325450e46bc2fc00ec5a0687, type: 2}
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a68b7597d80e5ac4cb738bd845facf38, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d629d5ef11a9ec943a7ec7fc5e408499, type: 2}
@@ -1171,13 +1176,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 4
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: e5f0b3832dbb6e84a8901a04ad93d0ca, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 7eaacd52c267b3241bc346c4626eb764, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 63751f923ab3763489cef3a5ef216f6f, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 4af434e64022b964eb7cd5c8cf39214b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300016, guid: 07110f644e4dba447a000a616d5315d3, type: 3}
@@ -4209,7 +4214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9a1e83d196acf43b32bca22370e4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mobsScene: 1
+  mobsScene: 2
   levelPortal: {fileID: 1371935154}
 --- !u!4 &2096914467
 Transform:
@@ -4314,6 +4319,11 @@ Prefab:
         type: 2}
       propertyPath: startDir
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614012980528316, guid: cceb964d597160341b819bea77f80c32,
+        type: 2}
+      propertyPath: maxLife
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cceb964d597160341b819bea77f80c32, type: 2}

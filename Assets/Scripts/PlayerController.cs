@@ -228,7 +228,7 @@ public class PlayerController : MonoBehaviour {
 			} else {
 				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
 				//animator.SetTrigger("Hurt");
-				TakeDamage(10);
+				TakeDamage(50);
 				Vector2 dir = col.contacts[0].point - (new Vector2(transform.position.x, transform.position.y));
 				dir = -dir.normalized;
 				rgbd.velocity = Vector2.zero;
