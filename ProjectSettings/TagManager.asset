@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Damage
   - Commands
+  - Spike
   layers:
   - Default
   - TransparentFX

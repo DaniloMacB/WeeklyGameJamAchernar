@@ -188,7 +188,7 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	/*void OnTriggerEnter2D(Collider2D col){
+	void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "Damage") {
 			if (invulnerable) {
 				print ("Invulnerable, not hitting");
@@ -199,8 +199,17 @@ public class PlayerController : MonoBehaviour {
 
 			Destroy (col.gameObject);
 		}
-	}*/
-
+		
+		if (col.tag == "Spike") {
+			if (invulnerable) {
+				print ("Invulnerable, not hitting");
+			} else {
+				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
+                animator.SetTrigger("Hurt");
+				TakeDamage(10);
+            }
+		}
+	}
 
 	void UpdateWeapon(){
 		nome = armaAtual.nome;														// puxa nome da arma
