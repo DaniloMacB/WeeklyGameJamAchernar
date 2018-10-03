@@ -7,6 +7,12 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour {
 
 
+	#region audio
+	public AudioClip shootSFX;
+	public AudioClip hurtSFX;
+	#endregion
+
+
 	#region vida do personagem
 	public int maxLife;
 	public int curLife;
@@ -84,7 +90,6 @@ public class PlayerController : MonoBehaviour {
 		rgbd = GetComponent<Rigidbody2D> ();										// define o rigidbody
 		animator = GetComponent<Animator>();										// define o animator
 		_audioSource = GetComponent<AudioSource> ();								// define o audiosource
-
         
 
 		currentBullets = bulletsPerMag;												// balas atuais = balas por municao
@@ -222,7 +227,7 @@ public class PlayerController : MonoBehaviour {
 				print ("Invulnerable, not hitting");
 			} else {
 				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
-				animator.SetTrigger("Hurt");
+				//animator.SetTrigger("Hurt");
 				TakeDamage(10);
 				Vector2 dir = col.contacts[0].point - (new Vector2(transform.position.x, transform.position.y));
 				dir = -dir.normalized;
@@ -264,6 +269,7 @@ public class PlayerController : MonoBehaviour {
 	public void TakeDamage(int damageToTake){
 		curLife -= damageToTake;
 		animator.SetTrigger ("Hurt");
+		AudioManager.instance.sfxSource.PlayOneShot (hurtSFX);
         
         if (curLife <= 0) {
 			print ("Game Over");
@@ -318,6 +324,7 @@ public class PlayerController : MonoBehaviour {
 		if (fireTimer < fireRate || currentBullets <= 0 || isReloading) return;									// se não tiver municao ou nao tiver dado o tempo, para a funcao
 
 		animator.SetTrigger("Shoot");
+		AudioManager.instance.sfxSource.PlayOneShot (shootSFX);
 		StartCoroutine (canMove_CR (0.375f));
 		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
 

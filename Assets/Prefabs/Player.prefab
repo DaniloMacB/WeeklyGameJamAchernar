@@ -223,9 +223,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64dcd9cedbf2c34db6aab1e540fbe9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootSFX: {fileID: 8300000, guid: bfa8df5546ef0f8449d285da890563fb, type: 3}
+  hurtSFX: {fileID: 8300000, guid: f2063f74925fdc7459a3ffd72aeaeedf, type: 3}
   maxLife: 100
   curLife: 0
-  lifeText: {fileID: 0}
+  lifeImage: {fileID: 0}
   ammoText: {fileID: 0}
   weaponText: {fileID: 0}
   armaAtual: {fileID: 11400000, guid: b1c8e003a8cf81b41a4471d6b884bb37, type: 2}
@@ -261,6 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d627c3f1095364ab602663dac2555c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
+  pausePanel: {fileID: 0}
 --- !u!114 &114383824347766986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,6 +286,8 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 4330496652322286}
   m_CeilingCheck: {fileID: 4009539326231332}
   m_CrouchDisableCollider: {fileID: 0}
+  walkSound: {fileID: 8300000, guid: 639a88f7ccfd20148af684d1ad1ccb60, type: 3}
+  jumpSound: {fileID: 8300000, guid: f85d2eaaac4fb38408dd109b8f025ac3, type: 3}
   m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:

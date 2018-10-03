@@ -11,6 +11,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
+	[SerializeField] private AudioClip walkSound;
+	[SerializeField] private AudioClip jumpSound;
 
 	const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
 	public bool m_Grounded;            // Whether or not the player is grounded.
@@ -45,6 +47,8 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+		InvokeRepeating ("WalkSound", 0.0f, 0.3f);
 	}
 
 	private void FixedUpdate()
@@ -137,10 +141,12 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+			AudioManager.instance.sfxSource.PlayOneShot(jumpSound);
 		} else if (!m_Grounded && jump && !doubleJumping) {
 			doubleJumping = true;
 			m_Rigidbody2D.velocity = Vector2.zero;
 			m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+			AudioManager.instance.sfxSource.PlayOneShot(jumpSound);
 		}
 			
 
@@ -156,5 +162,11 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	private void WalkSound(){
+		if (m_Rigidbody2D.velocity.magnitude >= 0.1f && m_Grounded && Input.GetButton("Vertical") || m_Rigidbody2D.velocity.magnitude >= 0.1f && m_Grounded && Input.GetButton("Horizontal") ){
+			AudioManager.instance.sfxSource.PlayOneShot(walkSound);
+		}
 	}
 }
