@@ -182,8 +182,8 @@ public class Enemy : MonoBehaviour {
 			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
 
         anim.SetBool("Attacking", true);
-        anim.SetBool("Walk", false);
-        anim.SetBool("Idle", false);
+        //anim.SetBool("Walk", false);
+        //anim.SetBool("Idle", false);
         yield return new WaitForSeconds (bulletShootTime);
 		shooting = false;
 
@@ -193,8 +193,8 @@ public class Enemy : MonoBehaviour {
     {
         shooting = true;
         anim.SetBool("Attacking", true);
-        anim.SetBool("Walk", false);
-        anim.SetBool("Idle", false);
+        //anim.SetBool("Walk", false);
+        //anim.SetBool("Idle", false);
 
         if(distanceFromPlayer <= distanceToAttack)
         {

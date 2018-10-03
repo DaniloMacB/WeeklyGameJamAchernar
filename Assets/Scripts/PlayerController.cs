@@ -194,20 +194,28 @@ public class PlayerController : MonoBehaviour {
 				print ("Invulnerable, not hitting");
 			} else {
 				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
-                animator.SetTrigger("Hurt");
+                //animator.SetTrigger("Hurt");
             }
 
 			Destroy (col.gameObject);
 		}
 		
-		if (col.tag == "Spike") {
+
+	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.transform.tag == "Spike") {
 			if (invulnerable) {
 				print ("Invulnerable, not hitting");
 			} else {
 				StartCoroutine (invulnerable_CR (hitInvulnerableTime));
-                animator.SetTrigger("Hurt");
+				animator.SetTrigger("Hurt");
 				TakeDamage(10);
-            }
+				Vector2 dir = col.contacts[0].point - (new Vector2(transform.position.x, transform.position.y));
+				dir = -dir.normalized;
+				rgbd.velocity = Vector2.zero;
+				rgbd.AddForce(dir*700f);
+			}
 		}
 	}
 
@@ -242,6 +250,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void TakeDamage(int damageToTake){
 		curLife -= damageToTake;
+		animator.SetTrigger ("Hurt");
         
         if (curLife <= 0) {
 			print ("Game Over");
@@ -309,6 +318,12 @@ public class PlayerController : MonoBehaviour {
 		currentBullets--;																	// diminui quantas balas tem
 		UpdateAmmoText();																	// atualiza texto de municao
 		fireTimer = 0.0f; 																	// reseta o timer	
+	}
+
+	private void Knockback(Transform col, float knockbackForce){
+		Vector2 knockbackDir = (this.transform.position - col.transform.position).normalized; 
+		rgbd.velocity = Vector2.zero;
+		transform.Translate (knockbackDir * knockbackForce);
 	}
 
 	IEnumerator reload_QR()																	// coroutine de reload

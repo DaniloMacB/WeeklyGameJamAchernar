@@ -15,9 +15,9 @@ MonoBehaviour:
   descricao: "Semi Autom\xE1tica"
   spriteArma: {fileID: 0}
   shootingMode: 0
-  bulletsPerMag: 30
-  bulletsLeft: 90
-  currentBullets: 30
+  bulletsPerMag: 9999999
+  bulletsLeft: 9999999
+  currentBullets: 9999999
   shootSound: {fileID: 0}
   reloadSound: {fileID: 0}
   fireRate: 0.05
