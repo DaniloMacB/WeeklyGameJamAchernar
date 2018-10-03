@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+	public AudioClip hurtSound;
+	public AudioClip deathSound;
 
 	public int curLife;
 	public int maxLife;
@@ -142,6 +144,7 @@ public class Enemy : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "Bullet") {
 			anim.SetTrigger("Hit");
+			AudioManager.instance.sfxSource.PlayOneShot (hurtSound);
 			TakeDamage (col.GetComponent<Bullet>().bulletDamage);
 			Destroy (col.gameObject);
 		}
@@ -151,6 +154,7 @@ public class Enemy : MonoBehaviour {
 		curLife -= damageToTake;
 		if (curLife <= 0) {
 			anim.SetTrigger ("Death");
+			AudioManager.instance.sfxSource.PlayOneShot (deathSound);
 			LevelManager.instance.killedMonster ();
 		}
 	}

@@ -244,6 +244,16 @@ Prefab:
       propertyPath: bulletShootTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114614012980528316, guid: cceb964d597160341b819bea77f80c32,
+        type: 2}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 49dead64520e2fe4d834918ff8fe5301, type: 3}
+    - target: {fileID: 114614012980528316, guid: cceb964d597160341b819bea77f80c32,
+        type: 2}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c5e8ce4ff7abf64d8ab59c244489dc5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cceb964d597160341b819bea77f80c32, type: 2}
   m_IsPrefabAsset: 0
@@ -1314,6 +1324,16 @@ Prefab:
       propertyPath: mobMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114078059309317170, guid: 090f434248926094296eda4aae3c538f,
+        type: 2}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 49dead64520e2fe4d834918ff8fe5301, type: 3}
+    - target: {fileID: 114078059309317170, guid: 090f434248926094296eda4aae3c538f,
+        type: 2}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c5e8ce4ff7abf64d8ab59c244489dc5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 090f434248926094296eda4aae3c538f, type: 2}
   m_IsPrefabAsset: 0
