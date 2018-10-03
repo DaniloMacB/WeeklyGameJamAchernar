@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour {
 	
 	public GameObject commandsPanel;
+	public GameObject volumePanel;
 	
 	public void Play()
 	{
@@ -39,5 +40,15 @@ public class Menu : MonoBehaviour {
 	public void BackCommands()
 	{
 		commandsPanel.SetActive (false);
+	}
+	
+	public void Volume()
+	{
+		volumePanel.SetActive (true);
+	}
+	
+	public void BackVolume()
+	{
+		volumePanel.SetActive (false);
 	}
 }
