@@ -151,6 +151,7 @@ public class Enemy : MonoBehaviour {
 		curLife -= damageToTake;
 		if (curLife <= 0) {
 			anim.SetTrigger ("Death");
+			LevelManager.instance.killedMonster ();
 		}
 	}
 

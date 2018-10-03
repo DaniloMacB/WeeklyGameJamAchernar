@@ -9,6 +9,7 @@ TagManager:
   - Damage
   - Commands
   - Spike
+  - Portal
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -198,6 +199,16 @@ public class PlayerController : MonoBehaviour {
             }
 
 			Destroy (col.gameObject);
+		}
+
+		if (col.tag == "Portal") {
+			int sceneIndex = SceneManager.GetActiveScene ().buildIndex + 1;
+			print ("index " + sceneIndex);
+			print ("bs " + SceneManager.sceneCountInBuildSettings);
+			if (sceneIndex >= SceneManager.sceneCountInBuildSettings)
+				Debug.LogError ("ERRO: CENA MAXIMA ATINGIDA");
+			else
+				SceneManager.LoadScene (sceneIndex);
 		}
 		
 
