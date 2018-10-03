@@ -205,10 +205,12 @@ public class PlayerController : MonoBehaviour {
 			int sceneIndex = SceneManager.GetActiveScene ().buildIndex + 1;
 			print ("index " + sceneIndex);
 			print ("bs " + SceneManager.sceneCountInBuildSettings);
-			if (sceneIndex >= SceneManager.sceneCountInBuildSettings)
-				Debug.LogError ("ERRO: CENA MAXIMA ATINGIDA");
-			else
+			if (sceneIndex >= SceneManager.sceneCountInBuildSettings) {
+				Debug.LogError ("Cena máxima atingida, voltando pro level 1");
+				SceneManager.LoadScene("Desktop");
+			} else {
 				SceneManager.LoadScene (sceneIndex);
+			}
 		}
 		
 

@@ -25,12 +25,14 @@ public class LevelManager : MonoBehaviour {
 
 	public void killedMonster(){
 		killedMobs++;
-		if(killedMobs >= mobsScene){
+		if (killedMobs >= mobsScene) {
 			int sceneIndex = SceneManager.GetActiveScene ().buildIndex + 1;
-			if (sceneIndex >= SceneManager.sceneCountInBuildSettings)
-				Debug.LogError ("ERRO: CENA MAXIMA ATINGIDA");
-			else
+			if (sceneIndex >= SceneManager.sceneCountInBuildSettings) {
+				Debug.LogError ("Cena máxima atingida, spawnando portal pro level 1");
 				levelPortal.SetActive (true);
+			} else {
+				levelPortal.SetActive (true);
+			}
 		}
 	}
 }
