@@ -13,5 +13,11 @@ EditorBuildSettings:
     guid: 6e4df0270ec33914c94fbc30f9fb79aa
   - enabled: 1
     path: Assets/Scenes/Pasta1.unity
+    guid: e7fccfe64774be848a413cbc69003e4b
+  - enabled: 1
+    path: Assets/Scenes/Pasta2.unity
+    guid: e396e1c034c115e489dc8a5dcfeb92cc
+  - enabled: 0
+    path: Assets/Scenes/PastaREMOVIDA.unity
     guid: 188fd9d745f9b724e8db08842016fd4d
   m_configObjects: {}
