@@ -1829,14 +1829,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114712584284471028, guid: 289544445752e85408a0bb6c1b9ba997,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2133649753}
     - target: {fileID: 114170064684318892, guid: 289544445752e85408a0bb6c1b9ba997,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2133649753}
+    - target: {fileID: 114712584284471028, guid: 289544445752e85408a0bb6c1b9ba997,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2133649753}
     m_RemovedComponents: []
