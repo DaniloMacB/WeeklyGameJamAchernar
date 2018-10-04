@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pasta9.unity
     guid: 9b38b3636679ac34e8e64f767bca0bc7
+  - enabled: 1
+    path: Assets/Scenes/HQsFinais.unity
+    guid: 66e908ff91b0b104abfff98e69b80a32
   m_configObjects: {}

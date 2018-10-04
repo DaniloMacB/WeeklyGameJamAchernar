@@ -255,8 +255,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MAS DE REPENTE POR ACIDENTE ELE FOI SUGADO PARA DENTRO DO COMPUTADOR ! !
-    !
+  m_Text: "OH N\xC3\xC3O ! O V\xCDRUS AINDA N\xC3O FOI DERROTADO ! SALVE-SE QUEM PUDER
+    ! ! !"
 --- !u!222 &34286203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: afee88c6b748e0141a354b1fede2d002, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64dc271c9134eb140a076725ba529a52, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -422,7 +422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &137391018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para iniciar"
+  m_Text: "Aperte espa\xE7o para sair"
 --- !u!222 &137391020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -548,8 +548,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Poucos minutos ap\xF3s ligar, o t\xE9cnico Rick Rich chegou para atend\xEA-lo.
-    . ."
+  m_Text: Ao se distrair da tela do computador um estranho barulho aparece nele. .
+    .
 --- !u!222 &154836366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -779,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &273505690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &294854842
 RectTransform:
   m_ObjectHideFlags: 0
@@ -968,7 +968,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fulano era apaixonado por usar o computador para jogar, e estudar. . .
+  m_Text: "Fulano ouve um grande estrondo. . . \xC9 Rick Rich, ele conseguiu acabar
+    escapar dos v\xEDrus com sucesso !"
 --- !u!222 &328205171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1107,7 +1108,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 20
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1322,7 +1323,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 91c031363990a99468c0aaf43632d7fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c340fd99d67c844f82ad3ca1c56fbd4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1688,7 +1689,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 89149d63ae238f649a58a96545cbc215, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 030a8deedffe2ff4a907eb246fc33f32, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1830,7 +1831,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 95dc360687b0eda48965331e165ca4f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de5be8b95269a234b8fce6192ab6ac5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1861,7 +1862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1442844492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1978,7 +1979,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6795554119ade2f4d8b1d61a2465a7f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 719f7de0b09b6f94d89a4b117c76f47d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2198,8 +2199,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Por\xE9m um dia, ao baixar um jogo pirata, ele encontrou um v\xEDrus que
-    estava destruindo seu computador. . ."
+  m_Text: Rick Rich contou-lhe tudo o que aconteceu. . . Ambos ficaram batendo papo
+    por um booooom tempo.
 --- !u!222 &1575176153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2409,7 +2410,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 49312f058ec2ccc47aec3b6fe41f5bfa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 126329d3995fcc94da76dd1590a7f01b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2491,8 +2492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ent\xE3o ele teve uma brilhante id\xE9ia, chamar o melhor t\xE9cnico do
-    bairro para arrumar seu computador."
+  m_Text: "Ent\xE3o fulano ouve um barulho em sua porta e olha para l\xE1."
 --- !u!222 &1972609861
 CanvasRenderer:
   m_ObjectHideFlags: 0
