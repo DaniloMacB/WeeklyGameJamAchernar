@@ -272,7 +272,12 @@ public class PlayerController : MonoBehaviour {
 		AudioManager.instance.sfxSource.PlayOneShot (hurtSFX);
         
         if (curLife <= 0) {
-			print ("Game Over");
+			animator.SetBool ("Dead", true);
+			animator.SetTrigger ("Death");
+			rgbd.simulated = false;
+			GetComponent<BoxCollider2D> ().enabled = false;
+			GetComponent<CircleCollider2D> ().enabled = false;
+			StartCoroutine (canMove_CR (5f));
 		}
         if (curLife < 0)
         {
@@ -282,6 +287,10 @@ public class PlayerController : MonoBehaviour {
         UpdateLifeImage();
 
     }
+
+	public void RestartGame(){
+		SceneManager.LoadScene ("Desktop");
+	}
 
     private void UpdateLifeImage()
     {
