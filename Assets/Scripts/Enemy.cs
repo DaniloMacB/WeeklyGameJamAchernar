@@ -103,7 +103,14 @@ public class Enemy : MonoBehaviour {
 			}
 
 		} else {
-			curState = state.Walk;
+			if (mobMode == mode.Stopped)
+			{
+				curState = state.Idle;
+			}else if(mobMode == mode.Walker) {
+				{
+					curState = state.Walk;
+				}
+			}
 		}
 
         if (mobMode == mode.Stopped)
@@ -175,21 +182,24 @@ public class Enemy : MonoBehaviour {
 	public void Death(){
 		rgbd.simulated = false;
 		GetComponent<Collider2D> ().enabled = false;
+		//GetComponent<Enemy> ().enabled = false;
 	}
 
 	IEnumerator Shoot_CR(){
 
 		shooting = true;
-		GameObject bulletShoot = Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
-		if(transform.localScale.x == -1f)
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
-		else
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
-
         anim.SetBool("Attacking", true);
-        //anim.SetBool("Walk", false);
-        //anim.SetBool("Idle", false);
+        anim.SetBool("Walk", false);
+        anim.SetBool("Idle", false);
         yield return new WaitForSeconds (bulletShootTime);
+		anim.SetBool("Attacking", false);
+		if (mobMode == mode.Walker) {
+			anim.SetBool ("Walk", true);
+			anim.SetBool ("Idle", false);
+		} else if (mobMode == mode.Stopped) {
+			anim.SetBool ("Walk", false);
+			anim.SetBool ("Idle", true);
+		}
 		shooting = false;
 
 	}
@@ -198,20 +208,39 @@ public class Enemy : MonoBehaviour {
     {
         shooting = true;
         anim.SetBool("Attacking", true);
-        //anim.SetBool("Walk", false);
-        //anim.SetBool("Idle", false);
+        anim.SetBool("Walk", false);
+        anim.SetBool("Idle", false);
 
-        if(distanceFromPlayer <= distanceToAttack)
-        {
-            float distanceY = transform.position.y - player.position.y;
-            print(distanceY);
-            if(distanceY <= 1f)
-            player.GetComponent<PlayerController>().TakeDamage(10);
-        }
+        //if(distanceFromPlayer <= distanceToAttack)
+        //{
+        //    float distanceY = transform.position.y - player.position.y;
+        //    print(distanceY);
+        //    if(distanceY <= 1f)
+        //    player.GetComponent<PlayerController>().TakeDamage(10);
+        //}
 
         yield return new WaitForSeconds(bulletShootTime);
+		anim.SetBool("Attacking", false);
         shooting = false;
     }
+
+	public void CheckAttackRadius(){
+		if(distanceFromPlayer <= distanceToAttack)
+		{
+			float distanceY = transform.position.y - player.position.y;
+			print(distanceY);
+			if(distanceY <= 1f)
+				player.GetComponent<PlayerController>().TakeDamage(10);
+		}
+	}
+
+	public void EnemySpawnObject(){
+		GameObject bulletShoot = Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
+		if(transform.localScale.x == -1f)
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
+		else
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
+	}
 
 
 

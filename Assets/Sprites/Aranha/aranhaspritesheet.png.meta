@@ -21,6 +21,12 @@ TextureImporter:
     21300032: aranhaspritesheet_16
     21300034: aranhaspritesheet_17
     21300036: aranhaspritesheet_18
+    21300038: aranhaspritesheet_19
+    21300040: aranhaspritesheet_20
+    21300042: aranhaspritesheet_21
+    21300044: aranhaspritesheet_22
+    21300046: aranhaspritesheet_23
+    21300048: aranhaspritesheet_24
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -140,7 +146,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -150,7 +156,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a08f50ecfb72be4cb692188b1bc0af4
+      spriteID: bcb0a0bf475fa514d9f09fea407c5e6a
       vertices: []
       indices: 
       edges: []
@@ -160,7 +166,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -170,7 +176,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82a8308ea7dce1546acfb80e6bcd19d2
+      spriteID: c73cc006e74237f42a9036b50b2792b0
       vertices: []
       indices: 
       edges: []
@@ -180,7 +186,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -190,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d83011c7b21a2c3408f9c331e44d7bc8
+      spriteID: 6ad19a87214ec4e45aadd53fc5dfff9a
       vertices: []
       indices: 
       edges: []
@@ -200,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -210,7 +216,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fd5a4824b2251d45b29e75744071d8d
+      spriteID: a260099ceb9a7a84fa40f91a9f94e0a2
       vertices: []
       indices: 
       edges: []
@@ -220,7 +226,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -230,7 +236,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e0b11d4e8a8fd64cb6952b7a3b2c5c5
+      spriteID: 5ee2eb91c26be634586733e4fde432b5
       vertices: []
       indices: 
       edges: []
@@ -240,6 +246,26 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132e60453605c3840b98259add088056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 128
         width: 64
         height: 64
@@ -250,27 +276,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e05fd104c3c468b41819e93af8cde0a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aranhaspritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c47fe0a5b852234083f23024fa51a3f
+      spriteID: 5a884fb5b12fa8048ae41e0d835bfb81
       vertices: []
       indices: 
       edges: []
@@ -280,6 +286,86 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e77f53b7cd530429a6a4bd8e3c24a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f2ae5864df18746a80bba0bc1f437d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39618a3befb71a4db9c252fe5f1cdb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff53d3d96991a0647b7bc4ac684e7c2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 64
         width: 64
         height: 64
@@ -290,13 +376,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b1187f8f6210ac45884ee180711f4b4
+      spriteID: 6e19841f7780329488941f34e4e13eda
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_8
+      name: aranhaspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f203d3c9eebac4a92a6da6ea3c425e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_13
       rect:
         serializedVersion: 2
         x: 256
@@ -310,13 +416,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010277eef70d8614090bb9eb3e990d77
+      spriteID: 825b30985c0c3b84e95c9170fbbfad1c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_9
+      name: aranhaspritesheet_14
       rect:
         serializedVersion: 2
         x: 320
@@ -330,13 +436,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca7306f3db7898b45b99c23851b0086b
+      spriteID: fcc68ca6a353ba943bbbe69a68f936ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_10
+      name: aranhaspritesheet_15
       rect:
         serializedVersion: 2
         x: 384
@@ -350,13 +456,73 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 898c141d93de8e641b84e39b15d3c497
+      spriteID: 72fb12fe5560c3f40980c15eac1931f6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_11
+      name: aranhaspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92388d34188539f469dcc0e55d2e7ade
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba091a64bdfedc47a9a5ced33913fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db7405430c486647814e5d450a52db7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aranhaspritesheet_19
       rect:
         serializedVersion: 2
         x: 64
@@ -370,13 +536,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9a71aaa32c03bf49bb3359188da832a
+      spriteID: 5e216558ee8bd9e49a502de915ff9ab8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_12
+      name: aranhaspritesheet_20
       rect:
         serializedVersion: 2
         x: 192
@@ -390,13 +556,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19e39f774e45fe4468e26a556c0ee998
+      spriteID: 097747a30f49b414e88eebbe61a5adf5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_13
+      name: aranhaspritesheet_21
       rect:
         serializedVersion: 2
         x: 256
@@ -410,13 +576,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30436400bd6c7924e97a9d65c02924be
+      spriteID: 000cea1f2367f5f46a4dbbb8a471890d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_14
+      name: aranhaspritesheet_22
       rect:
         serializedVersion: 2
         x: 320
@@ -430,13 +596,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 263c3fd2b76488f498e8cf7145f343c4
+      spriteID: d511deff330c5994a99a22645da2565d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_15
+      name: aranhaspritesheet_23
       rect:
         serializedVersion: 2
         x: 384
@@ -450,13 +616,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf82214563c1a742837acbd0e277485
+      spriteID: 80b210e59fe7896439ac4d57852caa28
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aranhaspritesheet_16
+      name: aranhaspritesheet_24
       rect:
         serializedVersion: 2
         x: 448
@@ -470,47 +636,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bad34f7c9552b0b43a7fc4393fe10463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aranhaspritesheet_17
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f170af927c3f7749ae6433e3a097117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: aranhaspritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36d96eb523584034ca4a2e46eecd0f8a
+      spriteID: 8408ea5319d7a984080a3a0e204200c0
       vertices: []
       indices: 
       edges: []

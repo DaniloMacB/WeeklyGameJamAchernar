@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &492688770
 Transform:
   m_ObjectHideFlags: 0
@@ -1642,7 +1642,7 @@ Transform:
   - {fileID: 492688770}
   - {fileID: 1512471400}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!66 &707711173
 CompositeCollider2D:
@@ -2167,11 +2167,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1300716457}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &1371935154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1452001648600840, guid: f39efe354ba210d40b3858dd6c91d6d0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1665984437}
 --- !u!1 &1512471399
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,9 +4437,26 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4315436916052614, guid: f39efe354ba210d40b3858dd6c91d6d0, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315436916052614, guid: f39efe354ba210d40b3858dd6c91d6d0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.502
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315436916052614, guid: f39efe354ba210d40b3858dd6c91d6d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.499
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f39efe354ba210d40b3858dd6c91d6d0, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1665984438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1599151549833770, guid: f39efe354ba210d40b3858dd6c91d6d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1665984437}
 --- !u!4 &1739588360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4056963657547750, guid: cceb964d597160341b819bea77f80c32,
@@ -4596,7 +4608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobsScene: 4
-  levelPortal: {fileID: 1371935154}
+  levelPortal: {fileID: 1665984438}
 --- !u!4 &2096914467
 Transform:
   m_ObjectHideFlags: 0
@@ -4608,7 +4620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2099902598
 Prefab:

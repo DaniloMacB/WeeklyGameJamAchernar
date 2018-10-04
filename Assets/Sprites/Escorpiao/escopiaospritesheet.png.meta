@@ -35,6 +35,16 @@ TextureImporter:
     21300060: escopiaospritesheet_30
     21300062: escopiaospritesheet_31
     21300064: escopiaospritesheet_32
+    21300066: escopiaospritesheet_33
+    21300068: escopiaospritesheet_34
+    21300070: escopiaospritesheet_35
+    21300072: escopiaospritesheet_36
+    21300074: escopiaospritesheet_37
+    21300076: escopiaospritesheet_38
+    21300078: escopiaospritesheet_39
+    21300080: escopiaospritesheet_40
+    21300082: escopiaospritesheet_41
+    21300084: escopiaospritesheet_42
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -154,7 +164,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -164,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e348a5b8b41514f87495e2a49c87db
+      spriteID: efca3496405459a49a0c5f258c3ed560
       vertices: []
       indices: 
       edges: []
@@ -174,7 +184,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -184,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db54f082b25dab845b4a87f2f7b0e11e
+      spriteID: 6dfced86e7677d741b6afddbf99dcb91
       vertices: []
       indices: 
       edges: []
@@ -194,7 +204,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -204,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30970a6cc57750443ab36d1a785d88a1
+      spriteID: d0905bf30dd9c8345ba392cd73581664
       vertices: []
       indices: 
       edges: []
@@ -214,7 +224,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -224,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5029a1a54727014eb370e24cb48e34e
+      spriteID: cb6e8f4e6f65851459aa5e43e18a33f3
       vertices: []
       indices: 
       edges: []
@@ -234,7 +244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -244,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5822609f8ef6cc64e9d7aed460969e46
+      spriteID: 258509bbe7240644087b3ba400b74fb0
       vertices: []
       indices: 
       edges: []
@@ -254,7 +264,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -264,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6c4b08bd2d5566478358d888d3410a2
+      spriteID: 6f8138f32c1b06243b007fffb641ff5d
       vertices: []
       indices: 
       edges: []
@@ -274,7 +284,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -284,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a218751d7df71f45a3cfb7b6e726553
+      spriteID: 167e4f07e07722e4fb9db6a4cc79245d
       vertices: []
       indices: 
       edges: []
@@ -294,7 +304,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -304,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09f7adc3a3a494a4b98fa2e1a7d4ea72
+      spriteID: d79cb8e12d4122a4a9bbce21e811e180
       vertices: []
       indices: 
       edges: []
@@ -314,7 +324,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -324,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f514b19fbe31f42a5350a5f8e40995
+      spriteID: 251e95a817d8ba84b82dc661815c636c
       vertices: []
       indices: 
       edges: []
@@ -334,7 +344,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -344,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c8e46421859b82469b6574aa8a80aec
+      spriteID: d295378ac96c47648ac5dea4574c4d80
       vertices: []
       indices: 
       edges: []
@@ -354,7 +364,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 7
@@ -364,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbd8e781dc7a7514f9337cc16e3df00d
+      spriteID: 569c29b9f9dec814fa4d723e0664733c
       vertices: []
       indices: 
       edges: []
@@ -374,6 +384,26 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 704
+        y: 256
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43577f89c2cf4324e8c49bc922cdc10e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 192
         width: 64
         height: 64
@@ -384,27 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33f98bd3c322d8a46a7bfb4ff5808a49
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escopiaospritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bae3b7dfce0da44cab37ae327be0cd4
+      spriteID: c090dae744733f8498469daddb3eacc7
       vertices: []
       indices: 
       edges: []
@@ -414,7 +424,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -424,7 +434,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4e249144dbb8b44c8320e85259b706b
+      spriteID: efb7204df4a51d442add57ef69106288
       vertices: []
       indices: 
       edges: []
@@ -434,7 +444,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -444,7 +454,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dedfaa1856a10940972877b0b21a91a
+      spriteID: 39ec89eec08459243849d02902b99f06
       vertices: []
       indices: 
       edges: []
@@ -454,7 +464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -464,7 +474,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae47a11abb979824cbbc9762ef981ea2
+      spriteID: 1858ca736e0070341ae47ce885075ddb
       vertices: []
       indices: 
       edges: []
@@ -474,7 +484,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -484,7 +494,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f97c36ef46804443bda8474e336524e
+      spriteID: a2d8048a7fc42694f88037ae61e40aab
       vertices: []
       indices: 
       edges: []
@@ -494,6 +504,26 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6da0cc3c9d88a498f1680367413101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 128
         width: 64
         height: 64
@@ -504,27 +534,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769d1c64324c0754b84bf8b3584d8c0d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escopiaospritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48c496e824b886e4493d3d57024e1a5b
+      spriteID: 93be43f7911cca34aba4ed22a0433032
       vertices: []
       indices: 
       edges: []
@@ -534,6 +544,86 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f71333dd95b41c4ab22aea35da677ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce902b8d2ca0b44449ef6b0582cf2d86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60fe18421cb0244c8b274dc48608073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388ffb5ff502aa649a657bff19c9b9bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 64
         width: 64
         height: 64
@@ -544,13 +634,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474d3ca23f2736e4e90e6eafd2dd67da
+      spriteID: 8f3544ceeca99af4a93fb33cfff0422e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_20
+      name: escopiaospritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f270cf537030b04a9ca004fbe1e9fed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_25
       rect:
         serializedVersion: 2
         x: 192
@@ -564,13 +674,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73a80d83d5549464f9b7b0ce8e0c4d34
+      spriteID: 51721c640abd5d84f8e4b817dd3a3683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_21
+      name: escopiaospritesheet_26
       rect:
         serializedVersion: 2
         x: 256
@@ -584,13 +694,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b05adc3fa53473e4c90cb4d45e01d2fa
+      spriteID: 3376655f92a9ebf4da805f0b0852d9fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_22
+      name: escopiaospritesheet_27
       rect:
         serializedVersion: 2
         x: 320
@@ -604,13 +714,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69fe15cf0ce1d424cb468e8f550c1edb
+      spriteID: 789fedd7cc89d2e4eac85f36fae33323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_23
+      name: escopiaospritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86451bd850b68041932e6190ddd73d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91d0588c1f8ee44484d69cba197bc7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a1d8ceb8ab58c42953c0062b0f16c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8c118df7cbb504cb93b87cef2f2458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0184d05e53f48f49992d894b7cea664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escopiaospritesheet_33
       rect:
         serializedVersion: 2
         x: 0
@@ -624,13 +834,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8e486c5620f91a408f178edb9723f2b
+      spriteID: d2d5203b92faa2c46906523613c64920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_24
+      name: escopiaospritesheet_34
       rect:
         serializedVersion: 2
         x: 128
@@ -644,13 +854,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 120fd1cb547cd994895a89a777f9857c
+      spriteID: a4f42eda8560cd44c879ed03f3284b02
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_25
+      name: escopiaospritesheet_35
       rect:
         serializedVersion: 2
         x: 192
@@ -664,13 +874,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a41266d88295949af75c524177846d
+      spriteID: 682cddfad9dc3214e97460aafa55dca9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_26
+      name: escopiaospritesheet_36
       rect:
         serializedVersion: 2
         x: 256
@@ -684,13 +894,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f5b8c3478351f48997c8418ec7d3ce
+      spriteID: e1e51a4229d938348afea042fe4251ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_27
+      name: escopiaospritesheet_37
       rect:
         serializedVersion: 2
         x: 320
@@ -704,13 +914,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5819d58941a9a64f8d087c5f1922f8d
+      spriteID: d945d85b3befa644ba80acee696b87a6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_28
+      name: escopiaospritesheet_38
       rect:
         serializedVersion: 2
         x: 384
@@ -724,13 +934,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 345da8963ee99ee4cb228129d417f0e4
+      spriteID: 923c8b724c1be8b47aae20185270ae50
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_29
+      name: escopiaospritesheet_39
       rect:
         serializedVersion: 2
         x: 448
@@ -744,13 +954,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 253506a36505d954b937f34766ee8970
+      spriteID: 6963ffa25fd02e94893448d7f0c510c7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_30
+      name: escopiaospritesheet_40
       rect:
         serializedVersion: 2
         x: 512
@@ -764,13 +974,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 931dbf4ebe0b62c4bbdcfb8f7c195ada
+      spriteID: ceea97eeb3570284eb614c8db7762e04
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_31
+      name: escopiaospritesheet_41
       rect:
         serializedVersion: 2
         x: 576
@@ -784,13 +994,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da4698476769a2d4592541e33ca8b31f
+      spriteID: eb52b63cd99966e4c98fdd633c9929fa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escopiaospritesheet_32
+      name: escopiaospritesheet_42
       rect:
         serializedVersion: 2
         x: 640
@@ -804,7 +1014,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51d4c0fa69213a847ba14f32e78a9ef3
+      spriteID: 4fe99ce571a03754f95ce3726aa5e46b
       vertices: []
       indices: 
       edges: []
