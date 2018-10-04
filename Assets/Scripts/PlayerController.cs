@@ -86,6 +86,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	void Awake(){
+
 		direcaoAtual = dir.right;													// comeca olhando pra direita
 		rgbd = GetComponent<Rigidbody2D> ();										// define o rigidbody
 		animator = GetComponent<Animator>();										// define o animator
@@ -118,7 +119,7 @@ public class PlayerController : MonoBehaviour {
 		#region arma
 		if (fireTimer < fireRate)													// se o firetimer for menor q a taxa de disparo
 		{
-			fireTimer += Time.deltaTime;											// firetimer aumenta com o tempo
+			//fireTimer += Time.deltaTime;											// firetimer aumenta com o tempo
 		}
 
 		switch (shootingMode)														// no modo de tiro
@@ -330,23 +331,25 @@ public class PlayerController : MonoBehaviour {
 
 	private void Fire()																							// void para atirar
 	{
+		fireTimer = 9999f;
 		if (fireTimer < fireRate || currentBullets <= 0 || isReloading) return;									// se não tiver municao ou nao tiver dado o tempo, para a funcao
 
 		animator.SetTrigger("Shoot");
-		AudioManager.instance.sfxSource.PlayOneShot (shootSFX);
-		StartCoroutine (canMove_CR (0.375f));
-		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
-
-		if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speedBullet * 5f * Time.deltaTime);// atira pra direita
-		else
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speedBullet * 5f * Time.deltaTime);	// senão atira pra esquerda
-
-
-		PlayShootSound();																	// toca o som do tiro
-		currentBullets--;																	// diminui quantas balas tem
-		UpdateAmmoText();																	// atualiza texto de municao
-		fireTimer = 0.0f; 																	// reseta o timer	
+		//AudioManager.instance.sfxSource.PlayOneShot (shootSFX);
+		//StartCoroutine (canMove_CR (0.375f));
+		////StartCoroutine (canShoot_CR (10f));
+		//GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
+		//
+		//if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
+		//	bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speedBullet * 5f * Time.deltaTime);// atira pra direita
+		//else
+		//	bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speedBullet * 5f * Time.deltaTime);	// senão atira pra esquerda
+		//
+		//
+		//PlayShootSound();																	// toca o som do tiro
+		//currentBullets--;																	// diminui quantas balas tem
+		//UpdateAmmoText();																	// atualiza texto de municao
+		//fireTimer = 0.0f; 																	// reseta o timer	
 	}
 
 	private void Knockback(Transform col, float knockbackForce){
@@ -367,6 +370,24 @@ public class PlayerController : MonoBehaviour {
 		canMove = false;
 		yield return new WaitForSeconds (moveTime);
 		canMove = true;
+	}
+
+	public void Shoot(){
+		AudioManager.instance.sfxSource.PlayOneShot (shootSFX);
+		StartCoroutine (canMove_CR (0.375f));
+		//StartCoroutine (canShoot_CR (10f));
+		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
+
+		if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speedBullet * 5f * Time.deltaTime);// atira pra direita
+		else
+			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speedBullet * 5f * Time.deltaTime);	// senão atira pra esquerda
+
+
+		PlayShootSound();																	// toca o som do tiro
+		currentBullets--;																	// diminui quantas balas tem
+		UpdateAmmoText();																	// atualiza texto de municao
+		fireTimer = 0.0f; 																	// reseta o timer	
 	}
 
 	IEnumerator invulnerable_CR(float howMuch){													// coroutine de invulnerabilidade
