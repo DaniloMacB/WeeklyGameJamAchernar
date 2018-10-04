@@ -169,7 +169,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &5831470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -255,8 +255,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MAS DE REPENTE POR ACIDENTE ELE FOI SUGADO PARA DENTRO DO COMPUTADOR ! !
-    !
+  m_Text: BUT SUDDENLY BY ACCIDENT HE WAS SUCKED TO INSIDE THE COMPUTER ! ! ! TIMMY
+    WAS SCARED !
 --- !u!222 &34286203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 25
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para iniciar"
+  m_Text: Press SPACE to start it
 --- !u!222 &137391020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -548,8 +548,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Poucos minutos ap\xF3s ligar, o t\xE9cnico Rick Rich chegou para atend\xEA-lo.
-    . ."
+  m_Text: A few minutes after calling him, the computer technician Rick Rich arrived
+    to assist him . . .
 --- !u!222 &154836366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -744,7 +744,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -755,7 +755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &243489344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -968,7 +968,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fulano era apaixonado por usar o computador para jogar, e estudar. . .
+  m_Text: Timmy was a guy who used to love to use the computer for playing games and
+    studying . . .
 --- !u!222 &328205171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1032,7 +1033,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1043,7 +1044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &527915638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1107,7 +1108,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 20
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1118,7 +1119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &606209867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1912,7 +1913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ele n\xE3o sabia mais o que fazer . . ."
+  m_Text: He didn`t knew more what to do . . .
 --- !u!222 &1442844494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2198,8 +2199,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Por\xE9m um dia, ao baixar um jogo pirata, ele encontrou um v\xEDrus que
-    estava destruindo seu computador. . ."
+  m_Text: However some day, while downloading pirate games, he downloaded a virus
+    who started destroying his computer . . .
 --- !u!222 &1575176153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2332,7 +2333,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2343,7 +2344,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &1897157638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2491,8 +2492,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ent\xE3o ele teve uma brilhante id\xE9ia, chamar o melhor t\xE9cnico do
-    bairro para arrumar seu computador."
+  m_Text: Then he had a brilliant idea, calling the best computer technician in his
+    city to give him assistance . . .
 --- !u!222 &1972609861
 CanvasRenderer:
   m_ObjectHideFlags: 0

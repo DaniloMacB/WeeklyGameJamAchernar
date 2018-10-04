@@ -169,7 +169,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &5831470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -255,8 +255,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "OH N\xC3\xC3O ! O V\xCDRUS AINDA N\xC3O FOI DERROTADO ! SALVE-SE QUEM PUDER
-    ! ! !"
+  m_Text: OH NOOO ! THE VIRUSES WASN`T DEFEATED YET ! RUN FOR YOUR LIFE ! ! ! NOOOO,
+    TIMMY, NOOOO !
 --- !u!222 &34286203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -548,8 +548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ao se distrair da tela do computador um estranho barulho aparece nele. .
-    .
+  m_Text: '"What is this noise coming from my computer ?" - said Timmy.'
 --- !u!222 &154836366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -744,7 +743,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -755,7 +754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &243489344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -968,8 +967,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fulano ouve um grande estrondo. . . \xC9 Rick Rich, ele conseguiu acabar
-    escapar dos v\xEDrus com sucesso !"
+  m_Text: Timmy heard a very loud sound . . . It`s Rick Rich, he managed to fight
+    against the viruses successfully !
 --- !u!222 &328205171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1033,7 +1032,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1044,7 +1043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &527915638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1108,7 +1107,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1119,7 +1118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &606209867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2199,8 +2198,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rick Rich contou-lhe tudo o que aconteceu. . . Ambos ficaram batendo papo
-    por um booooom tempo.
+  m_Text: Rick Rich told him everything that happened in the computer. . . They had
+    a chat for a looooong time.
 --- !u!222 &1575176153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2333,7 +2332,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a071e88c3f24be34cb75ba643f3e4b76, type: 3}
-    m_FontSize: 22
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2344,7 +2343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte espa\xE7o para avan\xE7ar"
+  m_Text: Press SPACE to skip this
 --- !u!222 &1897157638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2492,7 +2491,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ent\xE3o fulano ouve um barulho em sua porta e olha para l\xE1."
+  m_Text: Timmy heard the doorbell ringing. He was standing up to answer, but he heard
+    some noises coming out from his computer . . .
 --- !u!222 &1972609861
 CanvasRenderer:
   m_ObjectHideFlags: 0
