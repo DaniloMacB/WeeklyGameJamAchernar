@@ -243,7 +243,10 @@ MonoBehaviour:
   fireRate: 0
   reloadTime: 0
   isReloading: 0
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 1638274579354296, guid: 044c6b993f8a7c0478d6810a34216cf4,
+    type: 2}
+  bulletLeftPrefab: {fileID: 1638274579354296, guid: e40262624eab7b949bbc8058cc1c9e54,
+    type: 2}
   muzzleFlash: {fileID: 4542931624490790}
   speedBullet: 0
   invulnerable: 0
@@ -265,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaused: 0
   pausePanel: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &114383824347766986
 MonoBehaviour:
   m_ObjectHideFlags: 1

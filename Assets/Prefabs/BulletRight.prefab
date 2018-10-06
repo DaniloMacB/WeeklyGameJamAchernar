@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50435121500446410}
   - component: {fileID: 114052815625514678}
   m_Layer: 10
-  m_Name: Bullet
+  m_Name: BulletRight
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDamage: 10
+  right: 1
 --- !u!212 &212272354911486342
 SpriteRenderer:
   m_ObjectHideFlags: 1

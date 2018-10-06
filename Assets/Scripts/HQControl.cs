@@ -18,10 +18,12 @@ public class HQControl : MonoBehaviour {
 		if (Input.GetButtonDown ("Jump")) {
 			if (qualTaAtiva < hqs.Length) {
 				for (int i = 0; i < hqs.Length; i++) {
-					if (i == qualTaAtiva)
-						hqs [i].SetActive (true);
-					else
+					if (i != qualTaAtiva) {
 						hqs [i].SetActive (false);
+					} else {
+						hqs [i].SetActive (true);
+						break;
+					}
 					
 
 				}

@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 	public bool isReloading;														// var está carregando
 
 	public GameObject bulletPrefab;													// prefab da bala
+	public GameObject bulletLeftPrefab;
 	public Transform muzzleFlash;													// de onde a bala sai e sai o flash da arma
 	public float speedBullet;														// velocidade q a bala sai
 	#endregion
@@ -250,7 +251,7 @@ public class PlayerController : MonoBehaviour {
 		reloadSound = armaAtual.reloadSound;										// puxa o som do reload
 		fireRate = armaAtual.fireRate;												// puxa a taxa de disparos
 		reloadTime = armaAtual.reloadTime;											// puxa o tempo de releoad
-		bulletPrefab = armaAtual.bulletPrefab;										// puxa o prefab da bala
+		//bulletPrefab = armaAtual.bulletPrefab;										// puxa o prefab da bala
 		speedBullet = armaAtual.speedBullet;										// puxa a velocidade de bala
 	}
 
@@ -376,12 +377,18 @@ public class PlayerController : MonoBehaviour {
 		AudioManager.instance.sfxSource.PlayOneShot (shootSFX);
 		StartCoroutine (canMove_CR (0.375f));
 		//StartCoroutine (canShoot_CR (10f));
-		GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);			// instancia prefab da bala 
 
-		if(direcaoAtual == dir.right)																			// se tiver olhando pra direita
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speedBullet * 5f * Time.deltaTime);// atira pra direita
-		else
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speedBullet * 5f * Time.deltaTime);	// senão atira pra esquerda
+		if (transform.localScale.x == 1) {
+			//bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speedBullet * Time.deltaTime);// atira pra direita
+			GameObject bulletShoot = Instantiate(bulletPrefab, muzzleFlash.position, Quaternion.identity);
+			print ("pew");
+		} else {
+			GameObject bulletShoot = Instantiate(bulletLeftPrefab, muzzleFlash.position, Quaternion.identity);
+			print ("pow");
+			//bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speedBullet * Time.deltaTime);	// senão atira pra esquerda
+
+		}
+
 
 
 		PlayShootSound();																	// toca o som do tiro
