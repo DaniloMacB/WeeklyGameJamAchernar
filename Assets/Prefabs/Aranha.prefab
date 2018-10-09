@@ -147,13 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eddccd6f05d3cf44ac8512e46dbf772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtSound: {fileID: 0}
+  deathSound: {fileID: 0}
   curLife: 0
   maxLife: 20
   curDir: 1
   startDir: 1
   curState: 0
+  mobMode: 0
   attackMethod: 1
-  bulletPrefab: {fileID: 1638274579354296, guid: 1c6b1dcfe401fd9459516a0212bfc903,
+  bulletRightPrefab: {fileID: 1638274579354296, guid: d844698b9143d0b41b794fc336f6e0cc,
+    type: 2}
+  bulletLeftPrefab: {fileID: 1638274579354296, guid: 88119c9173e961f4ea46bede811cbec4,
     type: 2}
   bulletPos: {fileID: 4002779967952420}
   bulletSpeed: 2000

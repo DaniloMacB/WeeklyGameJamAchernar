@@ -25,7 +25,8 @@ public class Enemy : MonoBehaviour {
 
 	public enum attackStyle { Physical, Distance }
 	public attackStyle attackMethod;
-	public GameObject bulletPrefab;
+	public GameObject bulletRightPrefab;
+    public GameObject bulletLeftPrefab;
 	public Transform bulletPos;
 	public float bulletSpeed;
 	public float bulletShootTime;
@@ -235,12 +236,13 @@ public class Enemy : MonoBehaviour {
 	}
 
 	public void EnemySpawnObject(){
-		GameObject bulletShoot = Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
 		if(transform.localScale.x == -1f)
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
-		else
-			bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
-	}
+            Instantiate(bulletRightPrefab, bulletPos.position, Quaternion.identity);
+        //bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.right * (bulletSpeed * 5f) * Time.deltaTime);
+        else
+            Instantiate(bulletLeftPrefab, bulletPos.position, Quaternion.identity);
+        //bulletShoot.GetComponent<Rigidbody2D>().AddForce(Vector2.left * (bulletSpeed * 5f) * Time.deltaTime);
+    }
 
 
 
